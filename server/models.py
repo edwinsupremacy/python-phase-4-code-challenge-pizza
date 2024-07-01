@@ -62,10 +62,6 @@ class RestaurantPizza(db.Model, SerializerMixin):
     serialize_rules = ('-restaurant.restaurant_pizzas', '-pizza.restaurant_pizzas')
 
     # add validation
-    __table_args__ = (
-        CheckConstraint('price >= 1 AND price <= 30', name='check_price_range'),
-    )
-
     @validates('price')
     def validate_price(self, key, price):
         if not (1 <= price <= 30):
