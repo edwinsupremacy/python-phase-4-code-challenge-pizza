@@ -5,7 +5,10 @@ name = "pypi"
 
 [packages]
 Faker = "14.2.0"
+<<<<<<< HEAD
 Flask-Migrate = "3.1.0"
+=======
+>>>>>>> origin/main
 importlib-resources = "5.10.0"
 ipdb = "0.13.9"
 pytest = "7.1.3"
@@ -14,9 +17,16 @@ flask-restful = "*"
 flask = "*"
 werkzeug = "*"
 flask-sqlalchemy = "*"
+<<<<<<< HEAD
 
 [requires]
 python_full_version = "3.12.3"
 
 [dev-packages]
 typing-extensions = "*"
+=======
+flask-migrate = "*"
+
+[requires]
+python_full_version = "3.12.3"
+>>>>>>> origin/main
